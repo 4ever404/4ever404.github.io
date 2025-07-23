@@ -61,17 +61,11 @@ echo Hello world!
 - Android
 - Linux Mint
 - Windows
+
 <style>
     body
     {
-        color: aqua;
-    }
-    body, code
-    {
         background: black;
-    }
-    code
-    {
-        border-radius: 5%;
+        color: aqua;
     }
 </style>
