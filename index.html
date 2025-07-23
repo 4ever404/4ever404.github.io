@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta content='initial-scale=1, width=device-width' name='viewport'>
+        <script>
+            window.onload = () => alert('F11\nFull screen mode recommended | 建议全屏模式')
+            let checked = ''
+            const inputCheckbox = (element) =>
+            {
+                if (element.checked)
+                    document.getElementById('Windows').checked = false, document.getElementById('MacOS').checked = false,
+                    document.getElementById('Ubuntu').checked = false, element.checked = true, checked = element.id
+                else
+                    checked = ''
+            }
+            const inputSubmit = () =>
+            {
+                if (checked === 'Windows')
+                {
+                    alert('Congratulations!')
+                    inputButton()
+                }
+                else
+                    alert('Please retry.')
+            }
+            const inputButton = () => document.body.innerHTML =
+`<h1>
+    <span id='_4ever'>4ever</span>
+    <span id='_404'>404</span>
+</h1>
+<div>
+    <br>
+    <br>
+    <iframe src='iframe/coding'></iframe>
+    <br>
+    <br>
+    <br>
+</div>`
+        </script>
+        <style>
+            #_404
+            {
+                color: red;
+            }
+            #_4ever
+            {
+                color: blue;
+            }
+            #left
+            {
+                float: left;
+            }
+            #left, div
+            {
+                margin-left: 100px;
+            }
+            #right
+            {
+                float: right;
+            }
+            #right, div
+            {
+                margin-right: 100px;
+            }
+            *
+            {
+                color: ivory;
+            }
+            div
+            {
+                margin-top: 64px;
+            }
+            div, h1
+            {
+                text-align: center;
+            }
+            div, iframe, nav
+            {
+                border-radius: 10px;
+            }
+            div, nav
+            {
+                background: rgba(31, 31, 31, .75);
+            }
+            h1
+            {
+                font-size: 64px;
+            }
+            html
+            {
+                background: #561e3b url(img/win.png);
+                background-size: cover;
+            }
+            iframe
+            {
+                height: 420px;
+                width: 80%;
+            }
+            input
+            {
+                background: grey;
+            }
+            nav
+            {
+                margin-top: 50px;
+                width: 32%;
+            }
+        </style>
+        <title>4ever404</title>
+    </head>
+    <body>
+        <h1>
+            <span id='_4ever'>4ever</span>
+            <span id='_404'>404</span>
+        </h1>
+        <div>
+            <br>
+            <br>
+            Hello world!
+            <br>
+            Guess what the system is in the background.
+            <br>
+            <input id='Windows' onclick='inputCheckbox(this)' type='checkbox'>
+            Windows
+            <input id='MacOS' onclick='inputCheckbox(this)' type='checkbox'>
+            MacOS
+            <input id='Ubuntu' onclick='inputCheckbox(this)' type='checkbox'>
+            Ubuntu
+            <br>
+            <input onclick='inputSubmit()' type='submit' value='Submit'>
+            <input onclick='inputButton()' type='button' value='Skip'>
+            <br>
+            <br>
+            <br>
+        </div>
+        <nav id='left'>
+            &nbsp;Internal Links:
+            <ul>
+                <li><a href='about'>About</a></li>
+                <li><a href='blogs'>Blogs</a></li>
+                <li><a href='repos'>Repositories</a></li>
+            </ul>
+        </nav>
+        <nav id='right'>
+            &nbsp;External Links:
+            <ul>
+                <li><a href='https://github.com'>GitHub</a></li>
+                <li><a href='https://github.com/4ever404'>GitHub User: 4ever404</a></li>
+                <li><a href='https://github.com/4ever404/4ever404.github.io'>GitHub Repository: 4ever404.github.io</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
