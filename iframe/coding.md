@@ -37,22 +37,10 @@ int main()
 }
 ```
 - HyperText Markup Language/Cascading Style Sheets/JavaSript
-```html
-<!doctype html>
-<html>
-    <head></head>
-    <body>
-        <h1>Hello world!</h1>
-    </body>
-</html>
-```
 ```js
 console.log("Hello world!")
 ```
 - Markdown
-```md
-# Hello world!
-```
 - Python
 ```py
 print("Hello world!")
