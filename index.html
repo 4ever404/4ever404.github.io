@@ -4,7 +4,11 @@
         <meta charset='utf-8'>
         <meta content='initial-scale=1, width=device-width' name='viewport'>
         <script>
-            window.onload = () => alert('F11 full screen mode recommended.')
+            window.onload = () => 
+            {
+                alert('F11 full screen mode recommended.')
+                document.getElementById('audio').muted = false, document.getElementById('audio').volume = 1
+            }
             let checked = ''
             const inputCheckbox = (element) =>
             {
@@ -120,11 +124,11 @@
             <br>
             Guess what the system is in the background.
             <br>
-            <input id='Windows' onclick='inputCheckbox(this)' type='checkbox'>
+            <input aria-label='Windows' id='Windows' onclick='inputCheckbox(this)' type='checkbox'>
             Windows
-            <input id='MacOS' onclick='inputCheckbox(this)' type='checkbox'>
+            <input aria-label='MacOS' id='MacOS' onclick='inputCheckbox(this)' type='checkbox'>
             MacOS
-            <input id='Ubuntu' onclick='inputCheckbox(this)' type='checkbox'>
+            <input aria-label='Ubuntu' id='Ubuntu' onclick='inputCheckbox(this)' type='checkbox'>
             Ubuntu
             <br>
             <input onclick='inputSubmit()' type='submit' value='Submit'>
@@ -149,6 +153,6 @@
                 <li><a href='https://github.com/4ever404/4ever404.github.io'>GitHub Repository: 4ever404.github.io</a></li>
             </ul>
         </nav>
-        <audio autoplay loop src='audio/silver_lining.mp3'><a href='audio/silver_lining.mp3'>Tokyo Machine & End of the World - Silver Lining (Lost In Dreams Release)</a></audio>
+        <audio autoplay id='audio' loop muted src='audio/silver_lining.mp3'><a href='audio/silver_lining.mp3'>Tokyo Machine & End of the World - Silver Lining (Lost In Dreams Release)</a></audio>
     </body>
 </html>
