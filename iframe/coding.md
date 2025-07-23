@@ -62,7 +62,7 @@ echo Hello world!
 - Linux Mint
 - Windows
 <style>
-    html
+    body
     {
         background: black;
     }
