@@ -64,6 +64,14 @@ echo Hello world!
 <style>
     body
     {
+        color: aqua;
+    }
+    body, code
+    {
         background: black;
+    }
+    code
+    {
+        border-radius: 5%;
     }
 </style>
